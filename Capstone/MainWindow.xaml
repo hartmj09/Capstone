@@ -1,0 +1,236 @@
+﻿<Window x:Class="Capstone.MainWindow"
+        SizeChanged="Window_SizeChanged"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Capstone"
+        mc:Ignorable="d"
+        Title="Piano" Height="500" Width="1000"
+        Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/PianoKeyPicture1.JPG"/>
+    </Window.Background>
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Focusable="True" KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp" Height="500">
+
+        <Button 
+            x:Name="C4_NaturalNote"           
+            BorderThickness="0"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="1,0,0,0"
+            BorderBrush="Transparent"
+            Background="Transparent"
+            Style="{DynamicResource naturalNoteType1}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="C4_SharpNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="62,0,0,0"
+            Style="{DynamicResource sharpNote}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="D4_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="110,0,0,0"
+            Style="{DynamicResource naturalNoteType2}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="D4_SharpNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="171,0,0,0"
+            Style="{DynamicResource sharpNote}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+
+        <Button
+            x:Name="E4_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="220,0,0,0"
+            Style="{DynamicResource naturalNoteType3}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button 
+            x:Name="F4_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="328,0,0,0"
+            Style="{DynamicResource naturalNoteType1}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="F4_SharpNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="390,0,0,0"
+            Style="{DynamicResource sharpNote}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="G4_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="436,0,0,0"
+            Style="{DynamicResource naturalNoteType2}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="G4_SharpNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="497.2,0,0,0"
+            Style="{DynamicResource sharpNote}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+
+        <Button
+            x:Name="A4_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="546,0,0,0"
+            Style="{DynamicResource naturalNoteType2}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="A4_SharpNote"
+            Background = "Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="605.8,0,0,0"
+            Style="{DynamicResource sharpNote}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+
+        <Button
+            x:Name="B4_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="655,0,0,0"
+            Style="{DynamicResource naturalNoteType3}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="C5_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="764,0,0,0"
+            Style="{DynamicResource naturalNoteType1}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="C5_SharpNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="824,0,0,0"
+            Style="{DynamicResource sharpNote}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="D5_NaturalNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="873,0,0,0"
+            Style="{DynamicResource naturalNoteType2}"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+            x:Name="D5_SharpNote"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="top"
+            HorizontalAlignment="Left"
+            Margin="947,0,0,0"
+            Width="37"
+            Height="286"
+            FocusVisualStyle="{x:Null}">
+        </Button>
+
+        <Button
+                x:Name="recordButton"
+                Content="Record"
+                Click="record_Button"
+                Width="50"
+                Height="30"
+                Cursor="Hand"
+                Margin="0,0,0,55"
+                VerticalAlignment="Bottom">
+        </Button>
+
+        <Button
+                x:Name="Acoustic_Piano"
+                Content="Acoustic Piano"
+                Click="Acoustic_Piano_Click"
+                Height="30"
+                Cursor="Hand"
+                Margin="245,0,652,55"
+                VerticalAlignment="Bottom">
+        </Button>
+        <Button
+                x:Name="Synth_Strings"
+                Content="Synth Strings"
+                Click="Synth_Strings_Click"
+                Height="30"
+                Cursor="Hand"
+                Margin="655,0,250,55"
+                VerticalAlignment="Bottom">
+        </Button>
+
+    </Grid>
+
+
+</Window>
