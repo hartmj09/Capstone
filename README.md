@@ -1,5 +1,5 @@
 # Desktop piano application
-This is a piano desktop application that maps keyboard keys to musical notes and plays the sound of the notes played. The user can choose between an Accoustic or Synth piano. It also allows the user to record the played notes and creates a MusicXML file from what was played. 
+This is a piano desktop application that maps keyboard keys to musical notes and plays the sound of the notes played. The user can choose between an accoustic or synth piano. It also allows the user to record the played notes and creates a MusicXML file from what was played. 
 All the user needs to do is change the file path of the const string xmlfile variable (located in the MusicXMLWriter class) to their desired file path. For the extension of the file path use .xml. This is where the MusicXML will be saved on the computer. After the user
 can import the file to 3rd party software programs (such as Sibelius or MuseScore 4) and it will display what was played into musical sheet notation. 
 
