@@ -42,7 +42,7 @@ L => D5
 P => D-Sharp 5 (E-Flat 5)
 
 ## Current Iteration of the Project
-When recording this applicatoin currently recognizes single notes and chords. It can also recognize tied notes for single notes and script them correctly following MusicXML notation. 
+When recording, this applicatoin currently recognizes single notes and chords. It can also recognize tied notes for single notes and script them correctly following MusicXML notation. 
 
 Currently the application does not recognize rests or tied notes for chords.
 
